@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <contenu>test</contenu>
+    <contenu></contenu>
   </div>
   <RouterView />
 </template>
@@ -9,7 +9,14 @@
 
 <script>
 import { RouterLink, RouterView } from 'vue-router'
+import Contenu from './components/Contenu.vue';
 
+export default {
+  name: 'App',
+  components: {
+    'contenu': Contenu
+      }
+  }
 </script>
 
 
