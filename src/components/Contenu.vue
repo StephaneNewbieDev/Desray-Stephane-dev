@@ -4,7 +4,7 @@
         <h1 class="mb-5">Modale de test</h1>
 
         <modale v-bind:revele="revele" v-bind:toggleModale="toggleModale"></modale>
-        <div  v-on:click="toggleModale" class="btn btn-success">ouvre la modale</div>
+        <div  v-on:click="toggleModale" class="btn btn-success">ouvrir la modale</div>
 
     </div>
 </template>
