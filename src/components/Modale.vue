@@ -33,6 +33,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .overlay {
@@ -50,12 +51,27 @@ export default {
     padding: 50px;
     position: fixed;
     top: 30%;
+
 }
 
 .btn-modale {
     position: absolute;
     top: 10px;
     right: 10px;
-}    
+}
+
+.btn {
+    .box-shadow::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+}
 
 </style>
